@@ -1,135 +1,741 @@
-.navbar-dark {
-    background-color: #444;
+/*======================================
+             Genral default CSS
+======================================*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.hsoub {
-    text-align: right;
+.container {
+  width: 80%;
+  margin: auto;
 }
 
-.topnav {
-    overflow: hidden;
-    background-color: #444;
-    padding-top: 5px;
-    height: 70px;
+ul {
+  list-style-type: none;
 }
 
-.topnav a {
-    /* float: left; */
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
+a {
+  text-decoration: none;
+}
+*{
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 
-.topnav a:hover {
-    background-color: #ddd;
-    color: black;
+/*======================================
+            01. Start NavBar Area  
+======================================*/
+.mainBackground {
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+}
+nav {
+  padding: 20px 100px 0px;
+}
+nav img {
+  width: 130px;
 }
 
-/* Create a right-aligned (split) link inside the navigation bar */
-.topnav a.split {
-    float: right;
-    background-color: #04AA6D;
-    color: white;
+nav ul li a {
+  margin: 0 12px;
+  color: #333;
+  text-decoration: none;
+  font-size: 18px;
+}
+.loginButton {
+  position: relative;
+}
+.LoginBtn {
+  width: 120px;
+  height: 50px;
+}
+.loginButton span {
+  position: absolute;
+  left: 32%;
+  top: 10%;
+  font-size: 20px;
+  color: #333;
+}
+/*===========firstHeading=======*/
+.firstHeading{
+  padding: 0px 100px;
+}
+.FHeading{
+  padding-top: 180px;
+  width: 50%;
+}
+.FHeading h3{
+  font-size: 55px;
+  color: #637279;
+  font-weight: 600;
+}
+.FHeading h3 span{
+  color: #7a3d8a;
+}
+.FHeading p{
+  color: #afafaf;
+  font-size: 28px;
+  font-weight: 400;
+  margin-top: 20px;
+}
+.MaskGroup{
+  width: 45%;
+  left: 25%;
+  top: 0;
+}
+.clouds{
+  width: 60%;
+  left: 20%;
+  top: 60%;
+}
+.waves{
+  width: 90%;
+  top: 70%;
+  left: -18%;
+}
+/*======================================
+            End NavBar Area
+======================================*/
+
+/*======================================
+            02. Start About Area  
+======================================*/
+.SecondSec{
+  text-align: center;
+  padding: 0px 100px;
+  height: 120vh;
+}
+.Secbg{
+  width: 65%;
+  top: 8% ;
+  left: 22%;
+  height: 60%;
+}
+.secArea div{
+  width: 400px;
+}
+.secArea div img{
+  width: 250px;
+}
+.secArea div h3{
+  color: #999;
+  font-size: 25px;
+}
+.secArea div p{
+  color: #b9b9b9;
+    font-size: 20px;
+    line-height: 35px;
+}
+.secArea .group1{
+  top: 16%;
+  left: 10%;
+}
+.secArea .group2{
+  top: 32%;
+  left: 40%;
+}
+.secArea .group3{
+  top: 65%;
+  right: 12%;
+}
+.chosing{
+  top: 65%;
+  left: 10%;
+}
+.whyKudzoka{
+  width: 350px;
+}
+.chosing div{
+  top: 30%;
+  left: 20%;
+  text-align: left;
+}
+.whyChoose  p{
+  color: white;
+  font-size: 25px;
+}
+.whyChoose  h3{
+  color: white;
+  font-size: 50px;
+  font-weight: 400;
+}
+/*======================================
+           End NavBar Area  
+======================================*/
+
+/*======================================
+            03. Start Servises Area  
+======================================*/
+.servises{
+  padding-top: 150px;
+  text-align: center;
+}
+.MiddelImg{
+  padding:0 30px;
+ }
+ .MiddelImg h3{
+     color: #999;
+     font-size: 25px;
+ }
+ .MiddelImg p{
+     color: #b9b9b9;
+     font-size: 20px;
+     font-weight: 400;
+     margin-top: 10px;
+ }
+
+
+/*======================================
+            End Servises Area  
+======================================*/
+
+ /*======================================
+            04. Start Footer Area  
+======================================*/
+footer{
+  height: 80vh;
+  overflow: hidden;
+}
+.bgFooter{
+  width: 110%;
+  height: 150%;
+  left: -3%;
+  top: 0;
+}
+.people{
+  position: absolute;
+  width: 40vw;
+  right: 10%;
+  bottom: 0%;
+}
+footer .fotterInfo{
+  top: 65%;
+  left: 10%;
+}
+.appStore {
+  position: relative;
+  width: 130px;
+  height: 50px;
+  margin-right: 35px;
+}
+.btnApp{
+  width: 130px;
+  height: 50px;
+  vertical-align: top;
+}
+ footer .appStore div {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 10% ;
+  top:0%;
+}
+.appStore p {
+  font-size: 12px;
+  color: #333;
+}
+.appStore div span {
+  display: block;
+  color:#7a3d8a ;
+  font-size: 18px;
 }
 
-.sear {
-    margin-left: 10px;
+footer ul{
+  display: flex;
+  list-style: none;
+  align-items: center;
+  margin-top: 30px;
 }
-
-.hsoub {
-    margin: 10px 70px;
+footer ul li a{
+  margin-right: 15px;
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
 }
-
-.imo {
-    border-radius: 50px;
-    width: 30px;
+.socialmedia{
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
 }
+.socialmedia img{
+  width: 25px;
+  height: 35px;
+  margin-right: 15px;
 
-.left-section {
-    padding: 10px;
-    padding-left: 70px;
-    text-align-last: left;
 }
+ /*======================================
+           End Footer Area  
+======================================*/
 
-.right-section {
-    float: right;
-    margin-bottom: 10px;
-    text-align: right;
+ /*======================================
+            05. Start Mediaquery Area  
+======================================*/
+
+ /*====Media 1200px====*/
+@media only screen and (max-width:1200px) {
+  nav{
+    width:100%;
+  }
+  .mainBackground{
+      height: 80vh;
+  }
+  .FHeading{
+      padding-top: 120px;
+  }
+  .FHeading h3{
+      font-size: 45px;
+  }
+  .FHeading p{
+      font-size: 22px;
+  }
+  .waves{
+      top: 70%;
+  }
+/*======About area=====*/
+  .secArea div{
+      width: 300px;
+  }
+  .secArea div img{
+      width: 200px;
+  }
+  .secArea div p{
+      font-size: 18px;
+  }
+  .secArea .group1{
+      top: 14%;
+  }
+  .secArea .group2{
+      top: 26%;
+  }
+  .secArea .group3{
+      top: 52%;
+  }
+  .chosing{
+      top: 60%;
+  }
+  .whyKudzoka {
+      width: 300px;
+  }
+  .whyChoose  h3{
+      font-size: 40px;
+  }
+ /*=====Servises area====*/
+  .servises{
+      padding-top: 10px;
+  }
+  .servises .MiddelImg{
+      width: 350px;
+  }
+  .servises .leftImg{
+      width: 200px;
+  }
+  .servises .rightlImg{
+    width: 200px;
 }
-
-.topnav a .right {
-    text-align: right;
+/*====Footer====*/
+  footer{
+      height: 70vh;
+  }
 }
-
-h3 {
-    text-align: center;
-    padding-top: 70px;
-}
-
-
-.works {
+ /*====Media 992px====*/
+@media only screen and (max-width:992px) {
+  nav{
+    padding: 20px 50px 0px;
+  }
+  nav ul li a{
+    margin:  0 5px;
+    font-size: 15px;
+  }
+  nav .loginButton{
     position: relative;
-}
-.work {
-    color: white;
+  }
+  .LoginBtn{
+    width: 100px;
+    height: 35px;
+  }
+  .loginButton span{
+    left:30% ;
+    top: 10%;
+    font-size: 15px;
+  }
+/*======Navbar area ======*/
+  .mainBackground{
+    height: 380px;
+  }
+  .FHeading h3{
+    font-size: 25px;
+  }
+  .FHeading p{
+    font-size: 12px;
+  }
+  .FHeading{
+  position: relative;
+  bottom: 150px;
+  }
+/*=====About area======*/
+  .SecondSec{
+    height: 120vh;
+  }
+  .secArea div{
+    width: 220px;
+  }
+  .secArea div img{
+    width: 130px;
+  }
+  .secArea div h3{
+    font-size: 18px;
+  }
+  .secArea div p{
+    font-size: 12px;
+  }
+  .secArea .group2{
+    top: 32%;
+  }
+  .secArea .group3{
+    top: 60%;
+  }
+  .whyKudzoka{
+    width: 200px;
+  }
+  .whyChoose  p{
+    font-size: 15px;
+  }
+  .whyChoose  h3{
     font-size: 30px;
-    position: absolute;
-    top: 40%;
-    left: 40%;
-}
-
-
-.imgs{
-    opacity: 0.8;
-    color: black;
-}
-
-.work-1{
-    color: white;
-    font-size: 30px;
-    position: absolute;
-    top: 40%;
-    left: 25%;
-}
-.view{
-    display: inline-block;
-    text-decoration: none;
-   text-align: left;
-}
-
-.link-2
-{
-    text-decoration: none ;
-}
-.servieces{
-  font-size: 14.5px;
-  color: black;
-}
-.help{
-    color: black;
-    font-size: 13px;
-}
-.fa-star{
-    color: #fa9747;
+  }
+/*=====Servises area=====*/
+  .servises{
+    padding-top: 10px;
+  }
+  .MiddelImg p {
+    font-size: 18px;
+  }
+  .servises .MiddelImg{
+    width: 300px;
+  }
   
-   padding-left: 10px;
-}
-.stars{
-    padding-right: 5px;
-    
+  .servises .leftImg{
+  width: 150px;
+  }
+  .servises .rightlImg{
+  width: 150px;
+  }
+/*====Footer====*/
+  footer{
+    height: 40vh;
+  }
+  footer ul{
+    margin-top: 10px;
+  }
+  .socialmedia{
+    margin-top: 10px;
+  }
+  footer .appStore{
+    width: 100px;
+    height: 40px;
+  }
+  footer .appStore .btnApp{
+    width: 100px;
+    height: 40px;
+  }
+  footer .appStore div img{
+    width: 20px;
+  }
+  footer .appStore div p{
+    font-size: 8px;
+  }
+  footer .appStore div span{
+    font-size: 12px;
+  }
+  }
+
+ /*====Media 912px====*/
+@media only screen and (max-width:912px) {
+   nav ul li a{
+     font-size: 10px;
+   }
+   nav .loginButton{
+     position: relative;
+   }
+   .LoginBtn{
+     width: 100px;
+     height: 35px;
+   }
+   .loginButton span{
+     left:30% ;
+     top: 10%;
+     font-size: 15px;
+   }
+ 
+/*=====Navbar area====*/
+   .mainBackground{
+     height: 380px;
+   }
+   .FHeading h3{
+     font-size: 25px;
+   }
+   .FHeading p{
+     font-size: 12px;
+   }
+   .FHeading{
+   position: relative;
+   bottom: 150px;
+   }
+  }
+  /*====Media 768px====*/
+   @media only screen and (max-width:768px) {
+
+    nav{
+        padding: 20px 50px 0px;
+    }
+    nav ul li a{
+        margin:  0 5px;
+        font-size: 15px;
+    }
+    nav .loginButton{
+        position: relative;
+    }
+    .LoginBtn{
+        width: 100px;
+        height: 35px;
+    }
+    .loginButton span{
+        left:30% ;
+        top: 10%;
+        font-size: 15px;
+    }
+    /*=======Navbar====*/
+    .mainBackground{
+        height: 380px;
+    }
+    .FHeading h3{
+        font-size: 25px;
+    }
+    .FHeading p{
+        font-size: 12px;
+    }
   
+    /*========Servises =======*/
+    .SecondSec{
+        height: 120vh;
+    }
+    .secArea div{
+        width: 220px;
+    }
+    .secArea div img{
+        width: 130px;
+    }
+    .secArea div h3{
+        font-size: 18px;
+    }
+    .secArea div p{
+        font-size: 12px;
+    }
+    .secArea .group2{
+        top: 32%;
+    }
+    .secArea .group3{
+        top: 60%;
+    }
+    .whyKudzoka{
+        width: 200px;
+    }
+    .whyChoose  p{
+        font-size: 15px;
+    }
+    .whyChoose  h3{
+        font-size: 30px;
+    }
+    /*=======Servises====*/
+    .servises{
+        padding-top: 10px;
+    }
+    .MiddelImg p {
+        font-size: 18px;
+    }
+    .servises .MiddelImg{
+        width: 350px;
+    }
+  
+    .servises .leftImg{
+      width: 150px;
+  }
+  .servises .rightlImg{
+    width: 150px;
+  }
+    /*========footer====*/
+    footer{
+        height: 40vh;
+    }
+    footer ul{
+        margin-top: 10px;
+    }
+    .socialmedia{
+        margin-top: 10px;
+    }
+    footer .appStore{
+        width: 100px;
+        height: 40px;
+    }
+    footer .appStore .btnApp{
+        width: 100px;
+        height: 40px;
+    }
+    footer .appStore div img{
+        width: 20px;
+    }
+    footer .appStore div p{
+        font-size: 8px;
+    }
+    footer .appStore div span{
+        font-size: 12px;
+    }
+  }
+
+  /*====Media 576px====*/
+@media only screen and (max-width:576px) {
+  nav{
+      padding: 20px 10px 0px;
+  }
+  nav ul li a{
+      font-size: 8px;
+  }
+  nav img{
+      width: 70px;
+  }
+  .LoginBtn{
+      width: 70px;
+      height: 25px;
+  }
+  .loginButton span{
+      left:35% ;
+      top: 15%;
+      font-size: 10px;
+  }
+  /*====Navbar Area====*/
+  .firstHeading{
+      padding: 0px 50px;
+  }
+  .mainBackground{
+      height: 250px;
+  }
+  /* .FHeading{
+    position: relative;
+    bottom: 150px;
+  } */
+.FHeading h3{
+      font-size: 13px;
+  }
+  .FHeading p{
+  margin-top: 10px;
+      font-size: 8px;
+  }
+/*===About Area===*/
+  .SecondSec{
+      height: 60vh;
+  }
+  .Secbg{
+      position: absolute;
+      width: 65%;
+      top: 15% ;
+      left: 22%;
+      height: 35%;
+  }
+  .secArea div{
+      width: 120px;
+  }
+  .secArea div img{
+      width: 80px;
+  }
+  .secArea div h3{
+      font-size: 12px;
+  }
+  .secArea div p{
+      font-size: 8px;
+      line-height: 8px;
+  }
+  .secArea .group1{
+      top: 20%;
+      left: 5%;
+  }
+  .secArea .group2{
+      top: 28%;
+      left: 35%;
+  }
+  .secArea .group3{
+      top: 50%;
+  }
+  .chosing{
+      position: absolute;
+      top: 60%;
+      left: 10%;
+  }
+  .whyKudzoka{
+      position: relative;
+  }
+  .whyKudzoka {
+      width: 150px;
+  }
+  .whyChoose p{
+      font-size: 15px;
+  }
+  .whyChoose h3{
+      font-size: 20px;
+  }
+  /********Servises Area********/
+  .servises{
+      padding-top: 10px;
+  }
+  .MiddelImg h3{
+      font-size: 12px;
+  }
+  .MiddelImg p{
+      font-size: 8px;
+  }
+  .servises .MiddelImg{
+      padding: 0 1px;
+  }
+  .servises .MiddelImg{
+      width: 150px;
+  }
+  .servises .leftImg{
+      width: 100px;
+  }
+  .servises .rightlImg{
+    width: 100px;
 }
-.linkat{
-    text-decoration: none;
-    color: black;
-}
-li a{
-    text-decoration: none;
-    color: black;
-}
-.foot-khamsat{
-    text-decoration: none;
-    color: black;
+  /*=====footer====*/
+  footer{
+  
+      height: 50vh;
+  }
+  footer ul{
+      margin-top: 5px;
+  }
+  footer .people{
+     /* display: none; */
+  }
+  .socialmedia{
+      margin-top: 5px;
+  }
+  footer .appStore{
+      width: 100px;
+      height: 40px;
+  }
+  footer .appStore .btnApp{
+      width: 100px;
+      height: 40px;
+  }
+  footer .appStore div img{
+      width: 20px;
+  }
+  footer .appStore div p{
+      font-size: 8px;
+  }
+  footer .appStore div span{
+      font-size: 12px;
+  }
 }
